@@ -1,0 +1,13 @@
+Masukkan NIK Pelapor: 38319833390
+Masukkan Nama Pelapor: Diana
+Masukkan Nama Terduga Covid: Asri
+Masukkan Alamat Terduga Covid: Jl.Dom
+Masukkan Gejala: Demam
+{"response": "Laporan tidak valid"}
+
+Masukkan NIK Pelapor: 1234567890
+Masukkan Nama Pelapor: Cecilia Hana
+Masukkan Nama Terduga Covid: Dian Lestari
+Masukkan Alamat Terduga Covid: Jl. Pangeran No. 123
+Masukkan Gejala: Demam, Batuk
+{"response": "Laporan valid", "Waktu": "2023-11-26 14:15:41", "Nama_pelapor": "Cecilia Hana", "Jumlah_orang": 2}
