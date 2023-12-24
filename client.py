@@ -6,7 +6,7 @@ def send_report(data):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Menentukan alamat server
-    server_address = ("localhost", 8080)
+    server_address = ('localhost', 8080)  # Sesuaikan dengan alamat dan port server
 
     try:
         # Menghubungkan ke server
@@ -19,12 +19,12 @@ def send_report(data):
         # Menerima respons dari server
         response = client_socket.recv(1024)
         print(response.decode('utf-8'))
-
+        
     finally:
         # Menutup koneksi
         client_socket.close()
 
-def main():
+if __name__ == "__main__":
     # Meminta input dari pengguna
     nik_pelapor = input("Masukkan NIK Pelapor: ")
     nama_pelapor = input("Masukkan Nama Pelapor: ")
@@ -40,9 +40,6 @@ def main():
         "Alamat Terduga Covid": alamat_terduga,
         "Gejala": gejala,
     }
-
+    
     # Mengirim laporan ke server
     send_report(report_data)
-
-if __name__ == "__main__":
-    main()
